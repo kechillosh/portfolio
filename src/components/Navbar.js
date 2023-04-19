@@ -1,17 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
+import { SlHome } from "react-icons/sl";
+import { SlBookOpen } from "react-icons/sl";
+import { SlSpeech } from "react-icons/sl";
 
 function Navbar() {
   return (
     <div className="navbar">
       <Link className="nav_link" to="/">
-        Home
+        <SlHome /> Home
       </Link>
       <Link className="nav_link" to="/Projects">
-        Projects
+        <SlBookOpen /> Projects
       </Link>
       <Link className="nav_link" to="/Contact">
-        Contact
+        <SlSpeech /> Contact
       </Link>
     </div>
   );
